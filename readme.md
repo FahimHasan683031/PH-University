@@ -14,6 +14,6 @@
 
 NODE_ENV= development
 PORT=5000
-DATABASE_URL=mongodb+srv://mongoose-project:mongoose-project123@cluster0.m2apie0.mongodb.net/lebel-2-assignment-2?retryWrites=true&w=majority&appName=Cluster0
+DATABASE_URL=mongodb+srv://mongoose-project:mongoose-project123@cluster0.m2apie0.mongodb.net/ph-university?retryWrites=true&w=majority&appName=Cluster0
 DEFAULT_PASS=12345678
 BCRYPT_SALT_ROUNDS=12

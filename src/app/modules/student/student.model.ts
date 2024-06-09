@@ -129,6 +129,10 @@ const studentSchema = new Schema<TStudent, StudentModel>(
       type: guardianSchema,
       required: [true, 'Guardian information is required'],
     },
+    admissionSemester:{
+      type:Schema.Types.ObjectId,
+      ref:"AcademicSemester"
+    },
     localGuardian: {
       type: localGuradianSchema,
       required: [true, 'Local guardian information is required'],
@@ -156,7 +160,6 @@ studentSchema.pre('find', function (next) {
   this.find({ isDeleted: { $ne: true } });
   next();
 });
-
 studentSchema.pre('findOne', function (next) {
   this.find({ isDeleted: { $ne: true } });
   next();
